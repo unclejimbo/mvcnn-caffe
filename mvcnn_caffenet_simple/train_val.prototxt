@@ -9,7 +9,7 @@ layer {
   }
   transform_param {
     crop_size: 227
-    mean_file: "G:/GitHub/caffe/data/ilsvrc12/imagenet_mean.binaryproto"
+    mean_file: "G:/GitHub/mvcnn-caffe/modelnet40v2/mean.binaryproto"
   }
   data_param {
     source: "modelnet40v2/train_leveldb"
@@ -27,7 +27,7 @@ layer {
   }
   transform_param {
     crop_size: 227
-    mean_file: "G:/GitHub/caffe/data/ilsvrc12/imagenet_mean.binaryproto"
+    mean_file: "G:/GitHub/mvcnn-caffe/modelnet40v2/mean.binaryproto"
   }
   data_param {
     source: "modelnet40v2/val_leveldb"
@@ -41,11 +41,11 @@ layer {
   bottom: "data"
   top: "conv1"
   param {
-    lr_mult: 1
-    decay_mult: 1
+    lr_mult: 0
+    decay_mult: 0
   }
   param {
-    lr_mult: 2
+    lr_mult: 0
     decay_mult: 0
   }
   convolution_param {
@@ -96,11 +96,11 @@ layer {
   bottom: "norm1"
   top: "conv2"
   param {
-    lr_mult: 1
-    decay_mult: 1
+    lr_mult: 0
+    decay_mult: 0
   }
   param {
-    lr_mult: 2
+    lr_mult: 0
     decay_mult: 0
   }
   convolution_param {
@@ -152,11 +152,11 @@ layer {
   bottom: "norm2"
   top: "conv3"
   param {
-    lr_mult: 1
-    decay_mult: 1
+    lr_mult: 0
+    decay_mult: 0
   }
   param {
-    lr_mult: 2
+    lr_mult: 0
     decay_mult: 0
   }
   convolution_param {
@@ -185,11 +185,11 @@ layer {
   bottom: "conv3"
   top: "conv4"
   param {
-    lr_mult: 1
-    decay_mult: 1
+    lr_mult: 0
+    decay_mult: 0
   }
   param {
-    lr_mult: 2
+    lr_mult: 0
     decay_mult: 0
   }
   convolution_param {
@@ -219,11 +219,11 @@ layer {
   bottom: "conv4"
   top: "conv5"
   param {
-    lr_mult: 1
-    decay_mult: 1
+    lr_mult: 0
+    decay_mult: 0
   }
   param {
-    lr_mult: 2
+    lr_mult: 0.2
     decay_mult: 0
   }
   convolution_param {

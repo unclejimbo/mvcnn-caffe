@@ -3,6 +3,7 @@
 *.log
 *.caffemodel
 *.solverstate
+*.binaryproto
 CURRENT
 LOCK
 MANIFEST-*
