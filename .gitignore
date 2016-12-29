@@ -1,0 +1,12 @@
+*.txt
+*.ldb
+*.log
+*.caffemodel
+*.solverstate
+CURRENT
+LOCK
+MANIFEST-*
+LOG
+LOG.*
+modelnet40v2/bakedata/
+modelnet40v2/rawdata/

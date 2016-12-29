@@ -1,0 +1,3 @@
+- A simplified version of MVCNN.
+- Don't contain view-pooling layer.
+- Use majority vote to decide the class of a shape.
