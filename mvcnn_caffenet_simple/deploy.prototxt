@@ -200,7 +200,7 @@ layer {
   name: "mvcnn_fc8"
   type: "InnerProduct"
   bottom: "fc7"
-  top: "fc8"
+  top: "mvcnn_fc8"
   inner_product_param {
     num_output: 40
   }
