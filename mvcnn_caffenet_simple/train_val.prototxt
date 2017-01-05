@@ -344,11 +344,11 @@ layer {
   bottom: "fc7"
   top: "mvcnn_fc8"
   param {
-    lr_mult: 10
+    lr_mult: 5
     decay_mult: 1
   }
   param {
-    lr_mult: 20
+    lr_mult: 10
     decay_mult: 0
   }
   inner_product_param {
